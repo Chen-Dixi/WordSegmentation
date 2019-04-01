@@ -1,5 +1,6 @@
 # WordSegmentation
-自然语言处理与应用分词作业
+自然语言处理与应用分词作业 基于条件随机场原理，对隐马尔可夫模型进行了改进。隐马尔可夫分词讲解：https://www.jianshu.com/p/f140c3a44ab6
+
 
 ## 分词软件基于 CRF++-0.58
 #### 需要先安装，网盘地址：
@@ -24,7 +25,7 @@ C++ compiler (gcc 3.0 or higher)
 ## Run
 - Requirements
 
-需要训练好的分词模型，这里提供用北京大学的语料库训练的模型
+需要训练好的分词模型，这里提供自己用北京大学的语料库训练的模型
 链接:https://pan.baidu.com/s/1dzPof1V-iPwhGQQgx9IE7A  密码:3rqd
 
 #### 运行参数  
