@@ -33,6 +33,7 @@ def run_segment(input_file, output_file, tagger):
         tagger.clear()
         for word in line.strip():
             word = word.strip()
+            print(word)
             if word:
                 tagger.add((word + "\tB\n").encode('utf-8'))
         tagger.parse()
