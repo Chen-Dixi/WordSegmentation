@@ -38,4 +38,16 @@ C++ compiler (gcc 3.0 or higher)
 python segment.py model/crf_model_pku data/pku_test.utf8 data/result/pku_test_result.utf8
 ```
 
+#### Train
+- 训练自己的语料库，语料库格式如下，词语之间用空格` `隔开
+> “  人们  常  说  生活  是  一  部  教科书  ，  而  血  与  火  的  战争  更  是  不可多得  的  教科书  ，  她  确实  是  名副其实  的  ‘  我  的  大学  ’  。
+“  心  静  渐  知  春  似  海  ，  花  深  每  觉  影  生  香  。
+“  吃  屎  的  东西  ，  连  一  捆  麦  也  铡  不  动  呀  ？
+他  “  严格要求  自己  ，  从  一个  科举  出身  的  进士  成为  一个  伟大  的  民主主义  者  ，  进而  成为  一  位  杰出  的  党外  共产主义  战士  ，  献身  于  崇高  的  共产主义  事业  。
+......
 
+- 训练脚本
+```bash
+python train_corpus.py data/template data/msr_training.utf8 model/msr_model
+```
+得到的模型文件`model/msr_model`可以用来进行心得分词任务
