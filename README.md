@@ -50,4 +50,5 @@ python segment.py model/crf_model_pku data/pku_test.utf8 data/result/pku_test_re
 ```bash
 python train_corpus.py data/template data/msr_training.utf8 model/msr_model
 ```
-得到的模型文件`model/msr_model`可以用来进行心得分词任务
+得到的模型文件`model/msr_model`可以用来进行新的分词任务
+```
